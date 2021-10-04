@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Meeting Minutes Lab</title>
+        <meta charset="utf-8">
+        <link rel="google icon" href="google-fav.png">
+    </head>
+    <body>
+        <header>
+            <div>Agenda</div>
+                <nav>
+                    <ul>
+                        <li><input type="checkbox" /><a href="#fruit">Fruit</a></li>
+                        <li><input type="checkbox" /><a href="#inline-elements">Inline Elements</a></li>
+                        <li><input type="checkbox" /><a href="#questions">Questions</a></li>
+                    </ul>    
+                </nav>
+        </header>
+        <main>
+            <h1>Meeting Minutes</h1>
+            <img src="diagrams_stock_photo1.jpg" alt="professor teaching geometry"/>        
+            <section>
+                <h2>Purpose</h2>
+                <p>This meeting has no purpose</p>
+            </section>
+            <hr>
+            <h2 id="fruit">Fruit</h2>
+            <div class="ranked-fruit">
+                <h3>Ranked Fruit:</h3>
+                <ol>
+                    <li>Apple</li>
+                    <li>Peach</li>
+                    <li>Grape</li>
+                </ol>
+            </div>
+            <p>
+                Studies show <b class="term">apples</b> are <b class="term">bananas</b>. 
+                Therefore, <strong>do not combine the two.</strong>
+                This has nothing to do with <i>horticulture</i>.
+                The meeting concluded that the moon landing is a <em>hoax</em>!
+            </p>
+            <form>
+                <fieldset>
+                    <legend>We are polling our employees on fruit preferences</legend>
+                    <input type="radio" id="apple" name="fruit">
+                    <label for="apple">Apple</label><br/>
+                
+                    <input type="radio" id="peach" name="fruit">
+                    <label for="peach">Peach</label><br/>
+                    
+                    <input type="radio" id="grape" name="fruit">
+                    <label for="grape">Grape</label>
+                </fieldset>
+            </form>
+            <hr>
+            <h2 id="inline-elements">Inline Elements</h2>
+            <h3>Example 1</h3>
+            <p>
+                Inline elements do not end with a newline.
+                <span>&lt;span&gt;</span> is an inline element.
+            </p>
+            <hr>
+            <video controls width="150">
+                <source src="rewindtime.MP4" type="video/mp4">
+            </video>
+            <audio controls src="rewindtime.mp3">
+            </audio>
+            <details>
+                <summary>Easter Egg</summary>
+                Yaaaaa, it's rewind time!
+            </details>
+        </main>
+        <footer>
+            <h5 id="questions">Questions</h5>
+            <form>
+                <input type="text" placeholder="Ask a Question" />
+                <input type="date" />
+                <button>Send</button>
+            </form>
+            <form>
+                <textarea>Voice your concerns:</textarea>
+                <label for="choose-department">Send to department:</label>
+                <input list="departments" id="choose-department" name="choose-department" />
+                
+                <datalist id="departments">
+                    <option value="HR">
+                    <option value="PR">
+                    <option value="Business">
+                </datalist>
+            </form>
+            <form>
+                <label for="fruit-select">Choose a fruit:</label>
+                <select name="fruits" id="fruit-select">
+                    <option value="apple">Apple</option>
+                    <option value="grape">Grape</option>
+                </select>                
+            </form>
+            <br />
+            <div>&copy; fakeCopyright</div>
+        </footer>
+    </body>
+</html>
