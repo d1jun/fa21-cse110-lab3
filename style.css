@@ -1,0 +1,76 @@
+/* element selector */
+body {
+    background-color: rgb(163, 216, 240);
+}
+/*Combining Two Selectors*/
+b.term {
+    color: yellow;
+    position: relative;
+}
+/* class selector */
+.term {
+    font-family: 'Ephesis', cursive;
+}
+/* id selector */
+h2#fruit {
+    margin: 0px 0px 2pt 2in;
+    font-family: 'Ephesis', cursive;
+    position: static;
+}
+/* universal selector */
+* {
+    margin-bottom: 10px;
+}
+/*attribute selector*/
+/*the text that the user inputs is red*/
+input[type=text] {
+    color: red;
+}
+/*Pseudo-class Selector*/
+p:hover {
+    padding-left: 10ex;
+}
+/*Descendant Combinator*/
+div h3 {
+    text-decoration: underline;
+}
+/*Child Combinator*/
+ol>li {
+    padding: 0px 0px 2rem 20em;
+}
+/*General sibling combinator*/
+h3 ~ ol {
+    text-align: center;
+}
+/*Adjacent sibling combinator*/
+div + p {
+    background-color: red;
+    min-width: 1000px;
+}
+video {
+    display: block;
+}
+img {
+    display: none;
+}
+a:active { color: white; }
+
+@media (min-width: 100px) {
+    body {
+      background-color: gray;
+    }
+  }
+
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.ranked-fruit {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-columns: auto;
+    row-gap: 50px;
+}
